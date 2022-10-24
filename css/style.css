@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+/* PARTE HEADER */
+
+.upper-menu{
+    height: 60px;
+    width: 100vw;
+    background-color: blue;
+    justify-content: space-between;
+}
+
+.upper-menu section{
+    background-color: black;
+    height: 100%;
+    width: 30vw;
+}
+
+.upper-menu section div{
+    background-color: white;
+    height: 100%;
+    width: calc(100% / 4);
+    border: 1px solid black;
+}
