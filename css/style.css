@@ -37,7 +37,7 @@
 }
 
 #upper-description{
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: white;
     margin: 0 auto;
@@ -61,3 +61,51 @@
     width: 60%;
     background-color: orange;   
 }
+
+/* PARTE MAIN */
+
+/* CHOSE YOUR PLAN */
+
+#selection-plan-container{
+    background-color: green;
+    width: 60%;
+    margin: 0 auto;
+}
+
+main section h2{
+    background-color: blue;
+}
+
+#which-plan{
+    background-color: pink;
+    height: 20px;
+    width: 100%;
+}
+
+#plans-container{
+    width: 100%;
+}
+
+.plan{
+    height: 400px;
+    width: calc(100% / 3);
+    background-color: brown;
+    border: 1px solid black;
+    margin: 0 20px;
+}
+
+/* SALES OFFICE CONTACT */
+
+#salesoffice-contact{
+    background-color: darkorange;
+    height: 150px;
+    width: 60%;
+    margin: auto;
+}
+
+/* PARTNER CONTACT */
+
+#contact-partner{
+    
+}
+
