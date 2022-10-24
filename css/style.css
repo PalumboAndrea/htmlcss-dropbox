@@ -100,12 +100,46 @@ main section h2{
     background-color: darkorange;
     height: 150px;
     width: 60%;
-    margin: auto;
+    margin: 20px auto;
 }
 
 /* PARTNER CONTACT */
 
 #contact-partner{
-    
+    background-color: red;
+    height: 200px;
+    width: 60%;
+    margin: 20px auto;
 }
 
+/* DROPBOX BUSINESS CONTAINER */
+
+#dropbox-business-container{
+    width: 60%;
+    background-color: black;
+    margin: 20px auto;
+}
+
+#dropbox-business-container h2{
+    background-color: aquamarine;
+}
+
+.dropbox-business-card{
+    background-color: blue;
+    width: calc(100% / 3);
+    height: 150px;
+    border: 1px solid white;
+}
+
+.card-container{
+    flex-wrap: wrap;
+}
+
+/* USERS NUMBERS */
+
+#users-numbers{
+    background-color: yellow;
+    width: 60%;
+    height: 200px;
+    margin: 20px auto;
+}
