@@ -143,3 +143,62 @@ main section h2{
     height: 200px;
     margin: 20px auto;
 }
+
+/* SQUARES */
+
+#squares{
+   width: 100%;
+   height: 320px;
+   background-color: black;
+}
+
+.squares-container{
+    width: calc(100% / 3);
+    height: 100%;
+    background-color: aqua;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+/* BRING DROPBOX IN YOUR COMPANY */
+
+#dropbox-company{
+    background-color: rgb(179,208,231);
+    width: 100%;
+    height: 200px;
+}
+
+#dropbox-company div{
+    width: 60%;
+    height: 60%;
+    background-color: violet;
+    margin: auto;
+}
+
+/* FAQ */
+
+#faq{
+    height: 300px;
+    width: 60%;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+
+footer ul{
+    width: calc(100% / 5);
+    height: 200px;
+    border: 1px solid white;
+    margin: auto;
+}
