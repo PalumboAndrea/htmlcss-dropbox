@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    min-width: 900px;
 }
 
 .flex{
@@ -14,6 +15,25 @@ body{
 
 button{
     border: none;
+    padding: 6px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+.white-button a{
+    color: grey;
+}
+
+.white-button{
+    border: 1px solid rgb(79, 79, 79);
+    background-color: white;
+}
+
+.description-under-title{
+    font-size: 0.7rem;
+    color: rgb(79, 79, 79);
 }
 
 /* PARTE HEADER */
@@ -31,21 +51,24 @@ button{
     margin: 0 10px;
 }
 
-.upper-menu section div, .upper-menu section a{
-    margin-left: 20px;
+.upper-menu section img{
+    height: 20px;
+    margin-right: 20px;
+}
+
+.upper-menu section a{
+    margin: 0 10px;
     text-decoration: none;
     color: black;
 }
 
-.upper-menu section a:last-child{
+.blue-button a{
     color: white;
 }
 
 .blue-button{
-    color: white;
     background-color: rgb(1,96,255);
-    padding: 6px 10px;
-    text-decoration: none;
+    padding: 6px;
 }
 
 /* LOWER HEADER */
@@ -102,7 +125,7 @@ main section h2{
 
 #which-plan{
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
     font-size: 0.8rem;
 }
 
@@ -120,19 +143,34 @@ input{
 }
 
 .plan{
-    height: 800px;
+    height: 780px;
     width: calc(100% / 3);
     border: 1px solid lightgray;
-    margin: 0 10px;
 }
 
-.plan p:first-child{
+.team{
+    margin: 0 20px;
+}
+
+.plan p:first-child, #salesoffice-contact>p{
     text-align: center;
     padding: 5px 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
-.plan hr{
+.price{
+    font-weight: bold;
+}
+
+.period{
+    color: gray;
+}
+
+.plan-info{
+    height: 240px;
+}
+
+hr{
     height: 1px;
     background-color: lightgray;
     border: none;
@@ -143,12 +181,12 @@ input{
 }
 
 .plan div h3{
-    padding: 20px 0;
+    padding: 20px 10px 0 0;
 }
 
 .plan div p{
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .plan div p:nth-child(4){
@@ -159,51 +197,115 @@ input{
     margin: 30px 80% 30px 0;
 }
 
-.plan div h4{
-    font-weight: 500;
+.plan div h5{
+    margin-bottom: 25px;
 }
 
-.plan div button{
-    margin: 60px 0 40px 0;
+.plan div .blue-button{
+    margin: 60px 0 20px 0;
+    width: 100%;
 }
 
+.plan div button a{
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+.check{
+    color: rgb(5,98,255);
+}
 
 /* SALES OFFICE CONTACT */
 
 #salesoffice-contact{
-    background-color: darkorange;
-    height: 150px;
+    border: 1px solid lightgray;
     width: 60%;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
-/* PARTNER CONTACT */
+#salesoffice-contact div{
+    padding: 8px;
+    justify-content: space-between;
+}
+
+#salesoffice-contact div span, #salesoffice-contact div p{
+    font-size: 0.7rem;
+}
+
+#salesoffice-contact div p{
+    margin-top: 30px;
+}
+
+
+/* GET IN TOUCH WITH A DROPBOX CONTACT */
 
 #contact-partner{
-    background-color: red;
-    height: 200px;
+    height: 400px;
     width: 60%;
-    margin: 20px auto;
+    margin: 100px auto;
 }
 
-/* DROPBOX BUSINESS CONTAINER */
+#contact-partner div{
+    padding: 30px;
+}
+
+#contact-partner .description-under-title{
+    margin: 20px 0;
+}
+
+/* DROPBOX BUSINESS OPERATION */
 
 #dropbox-business-container{
     width: 60%;
-    background-color: black;
     margin: 20px auto;
 }
 
 #dropbox-business-container h2{
-    background-color: aquamarine;
+    margin-bottom: 30px;
 }
 
 .dropbox-business-card{
-    background-color: blue;
     width: calc(100% / 3);
-    height: 150px;
-    border: 1px solid white;
+    height: 450px;
+    padding: 15px;
 }
+
+.dropbox-business-card .photo{
+    height: 40%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-switching-tools{
+    background-image: url(../img/business-feature-switching-tools.png);
+}
+
+.photo-send-files{
+    background-image: url(../img/business-feature-send-files-it.png);
+}
+
+.photo-coordinate{
+    background-image: url(../img/business-feature-coordinate-it.png);
+}
+
+.photo-integrations{
+    background-image: url(../img/business-feature-integrations-it.png);
+}
+
+.photo-multi-device{
+    background-image: url(../img/business-feature-multi-device.png);
+}
+
+.photo-security{
+    background-image: url(../img/business-feature-security.png);
+}
+
+.dropbox-business-card h3{
+    margin: 30px 0;
+}
+
 
 .card-container{
     flex-wrap: wrap;
