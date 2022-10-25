@@ -1,3 +1,6 @@
+
+/* GENERAL */
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +9,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    min-width: 900px;
+    min-width: 970px;
 }
 
 .flex{
@@ -18,13 +21,17 @@ button{
     padding: 6px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-
 button a{
     text-decoration: none;
+}
+
+.blue-button{
+    background-color: rgb(1,96,255);
+    padding: 8px;
+}
+
+.blue-button a{
+    color: white;
 }
 
 .white-button a{
@@ -34,7 +41,7 @@ button a{
 .white-button{
     border: 1px solid rgb(79, 79, 79);
     background-color: white;
-    border: none;
+    border: 1px solid black;
     padding: 10px 30px;
 }
 
@@ -43,7 +50,11 @@ button a{
     color: rgb(79, 79, 79);
 }
 
-/* PARTE HEADER */
+h2{
+    font-size: 2rem;
+}
+
+/* HEADER */
 
 /* UPPER HEADER */
 
@@ -70,13 +81,8 @@ button a{
     font-size: 0.8rem;
 }
 
-.blue-button a{
+.upper-menu .blue-button a{
     color: white;
-}
-
-.blue-button{
-    background-color: rgb(1,96,255);
-    padding: 6px;
 }
 
 /* LOWER HEADER */
@@ -87,19 +93,16 @@ button a{
 }
 
 #upper-description{
-    width: 75%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 #upper-description h1{
-    width: 80%;
+    width: 90%;
     font-size: 4rem;
-    padding-top: 20px;
-}
-
-#upper-description div{
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 #upper-description div article{
@@ -107,18 +110,29 @@ button a{
 }
 
 #upper-description div article p{
-    margin: 20px 0;
+    width: 250px;
+    margin: 50px 0 20px 0;
+    font-size: 0.8rem;
+}
+
+#upper-description div article p:nth-child(3){
+    margin: 15px 0 0 0;
 }
 
 #arrow{
     font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-div img{
-    height: 350px;
+#upper-description-container img{
+    height: 400px;
+    position: relative;
+    top: 50px;
 }
 
-/* PARTE MAIN */
+/* MAIN */
 
 /* CHOSE YOUR PLAN */
 
@@ -128,7 +142,7 @@ div img{
 }
 
 #selection-plan-container h2{
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 #which-plan{
@@ -229,10 +243,10 @@ hr{
 #salesoffice-contact{
     border: 1px solid lightgray;
     width: 60%;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 
-#salesoffice-contact div{
+#salesoffice-contact>div{
     padding: 8px;
     justify-content: space-between;
 }
@@ -245,8 +259,12 @@ hr{
     margin-top: 30px;
 }
 
+#salesoffice-contact button{
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
 
-/* GET IN TOUCH WITH A DROPBOX CONTACT */
+/* GET IN TOUCH WITH A DROPBOX PARTNER */
 
 #contact-partner{
     height: 400px;
@@ -276,7 +294,7 @@ hr{
 .dropbox-business-card{
     width: calc(100% / 3);
     height: 450px;
-    padding: 15px;
+    padding: 15px 15px 0 0;
 }
 
 .dropbox-business-card .photo{
@@ -323,35 +341,107 @@ hr{
 #users-numbers{
     width: 60%;
     height: 200px;
-    margin: 20px auto;
+    margin: 80px auto;
 }
 
 #users-numbers h2{
-    width: 60%;
+    width: 70%;
     margin-bottom: 50px;
 }
 
 /* SQUARES */
 
 #squares{
-   width: 100vw;
-   height: 80vh;
+   width: 100%;
+   height: 500px;
    background-color: black;
 }
 
 .squares-container{
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(245,245,245);
     flex-wrap: wrap;
 }
 
 .square{
     width: calc(100% / 2);
     height: calc(100% / 2);
-    background-color: yellow;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
 }
+
+.central-container{
+    padding: 40px;
+}
+
+.central-container img{
+    height: 70px;
+}
+
+.central-container hr{
+    width: 25%;
+    margin: 30px 0;
+}
+
+.central-container p{
+    margin-bottom: 30px;
+}
+
+.central-container p, .central-container span{
+    font-size: 0.8rem;
+}
+
+.square img{
+    height: 50px;
+    filter: invert(1);
+}
+
+.square-uf img{
+    height: 30px;
+}
+
+.square-hearst img{
+    height: 15px;
+}
+
+.square-asu img, .square-clear-channel img{
+    height: 100px;
+}
+
+.square-designit{
+    background-color: rgb(162,211,155);
+    border: 10px solid rgb(209,232,205);
+}
+
+.square-asu{
+    background-color: rgb(97,9,43);
+}
+
+.square-uf{
+    background-color: rgb(0,147,206);
+}
+
+.square-topps{
+    background-color: rgb(255,27,28);
+}
+
+.square-bicycle{
+    background-color: rgb(212,0,31);
+}
+
+.square-hearst{
+    background-color: rgb(179,208,231);
+}
+
+.square-lonely-planet{
+    background-color: rgb(14,35,129);
+}
+
+.square-clear-channel{
+    background-color: rgb(255,215,47);
+}
+
 
 /* BRING DROPBOX IN YOUR COMPANY */
 
@@ -378,6 +468,10 @@ hr{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+#dropbox-company .white-button{
+    border: none;
 }
 
 /* FAQ */
@@ -437,13 +531,18 @@ footer li{
     font-size: 0.7rem;
 }
 
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
 footer div{
     width: 70%;
     margin: auto;
 }
 
 footer hr{
-    width: 15%;
+    width: 10%;
     height: 1px white;
 }
 

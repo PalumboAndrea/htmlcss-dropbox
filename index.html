@@ -14,6 +14,9 @@
 
 
     <header>
+
+        <!-- UPPER HEADER -->
+
         <nav class="upper-menu flex">
             <section class="flex">
                 <img src="./img/logo-small.png" alt="">
@@ -45,6 +48,8 @@
             </section>
         </nav>
 
+        <!-- LOWER HEADER -->
+
         <section id="upper-description-container">
             <div id="upper-description">
                 <h1>
@@ -68,20 +73,16 @@
                             Annulla in qualsiasi momento
                         </p>
                         <span id="arrow">
-                            &darr;
+                            <i class="fas fa-arrow-circle-down"></i>
                         </span>
                     </article>
 
                     <img src="./img/jumbo.png" alt="">
-                    
                 </div>
-                
-
             </div>
         </section>
+
     </header>
-
-
 
     <main>
 
@@ -93,10 +94,12 @@
            </h2>
            <form id="which-plan">
                 <div>
-                    <input type="radio">Fatturazione mensile
+                    <input type="radio" id="monthly-payment" name="payment" value="Fatturazione mensile">
+                    Fatturazione mensile
                 </div>
                 <div>
-                    <input type="radio">Fatturazione annuale
+                    <input type="radio" id="annual-payment" name="payment" value="Fatturazione annuale">
+                    Fatturazione annuale
                 </div> 
             </form>
 
@@ -290,21 +293,17 @@
                         Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala
                     </p>
                 </div>
-                <button class="blue-button">
-                    <a href="">
-                        Contatta l'ufficio vendite
-                    </a>
-                </button>
+                <div>
+                    <button class="blue-button">
+                        <a href="">
+                            Contatta l'ufficio vendite
+                        </a>
+                    </button>
+                </div>
             </div>
-
-
-
-
-
-
         </section>
 
-        <!-- GET IN TOUCH WITH A DROPBOX CONTACT -->
+        <!-- GET IN TOUCH WITH A DROPBOX PARTNER -->
 
         <section id="contact-partner" class="flex">
             <img src="./img/partner.png" alt="">
@@ -326,7 +325,6 @@
         </section>
         
         <!-- DROPBOX BUSINESS OPERATION -->
-
 
         <section id="dropbox-business-container">
             <h2>
@@ -433,36 +431,44 @@
 
         <section id="squares" class="flex">
             <div class="squares-container flex">
-                <div class="square">
-
+                <div class="square square-designit flex">
+                    <img src="./img/designit.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-asu flex">
+                    <img src="./img/arizona_state_university.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-uf flex">
+                    <img src="./img/university_of_florida.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-topps flex">
+                    <img src="./img/topps.svg" alt="">
                 </div>
             </div>
 
             <div class="squares-container">
-            
+                <div class="central-container">
+                    <img src="./img/designit.svg" alt="">
+                    <hr>
+                    <p>
+                        "I membri del nostro team lavorano costantemente in paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile come Dropbox e Dropbox Paper.
+                        Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile come Dropbox Paper".
+                    </p>
+                    <span>Morten Thomsen, Global IT Lead</span>
+                </div>
             </div>
 
             <div class="squares-container flex">
-                <div class="square">
-
+                <div class="square square-bicycle flex">
+                    <img src="./img/world_bicycle_relief.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-hearst flex">
+                    <img src="./img/hearst_corp.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-lonely-planet flex">
+                    <img src="./img/lonely_planet.svg" alt="">
                 </div>
-                <div class="square">
-                    
+                <div class="square square-clear-channel flex">
+                    <img src="./img/clear_channel.svg" alt="">
                 </div>
             </div>
 
@@ -518,19 +524,9 @@
                 </span>
                 <hr>
             </div>
-            <div>
-                <p>
-                    Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced
-                </p>
-                <span>
-                    <i class="fas fa-angle-down"></i>
-                </span>
-                <hr>
-            </div>
         </section>
 
     </main>
-
 
     <footer>
         <section id="lower-link" class="flex">
@@ -640,6 +636,7 @@
             </ul>
 
         </section>
+
         <div>
             <hr>
         </div>
@@ -647,8 +644,6 @@
         <div id="language">
             <i class="fas fa-globe-americas"></i> Italiano <i class="fas fa-caret-up"></i>
         </div>
-        
-       
 
     </footer>
 
